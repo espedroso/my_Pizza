@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPizza</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav id="menu">
+           
+                <a href="index.html" target="_self" rel="">Home</a>
+                <a href="clientes.html" target="_self">Clientes</a>
+                <a href="produtos.html" target="_self">Produtos</a>
+                <a href="cardapio.html" target="_self">Cardápio</a>
+            
+        </nav>
+    </header>
+    <main>
+       <section id="login">
+            <div id="imagem">
+                <!-- Aqui entra uma imagem na CSS. -->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Bem-Vindo(a). Faça login para acessar</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">
+                            person
+                        </span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                         <label for="ilogin">Login</label>
+
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">
+                            vpn_key
+                        </span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                         <label for="isenha">Senha</label>
+
+                    </div>
+
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">Esqueci a senha
+                        <span class="material-icons">
+                            mail
+                        </span>
+                    </a>
+                </form>
+            </div>
+       </section>
+    </main>
+    <footer>
+        <p>Feito por <a href="https://github.com/espedroso" target="_blank" rel="external">Everton Pedroso</a></p>
+    </footer>
+</body>
+</html>
